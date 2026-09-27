@@ -1,0 +1,15 @@
+column,iqr_outlier_count
+latitude,0
+longitude,0
+wind_speed_ms,0
+wind_direction_deg,0
+temperature_c,0
+humidity_pct,0
+traffic_emission_rate_kg_h,0
+industrial_emission_rate_kg_h,0
+rl_traffic_signal_offset_s,0
+rl_green_corridor_active,0
+rl_ventilation_control_mw,0
+co2_concentration_ppm,0
+pm25_ug_m3,0
+reward_value,0
