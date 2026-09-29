@@ -1,0 +1,42 @@
+BUSINESS INSIGHTS - ECOTWIN URBAN CARBON DISPERSAL
+======================================================================
+
+1) SCENARIO RESULT (max RL mitigation on every hour)
+                                metric   value
+                   mean actual CO2 ppm 568.778
+                mean predicted CO2 ppm 569.754
+mean CO2 under max-mitigation scenario 569.754
+                       mean saving ppm   0.000
+                         mean saving %   0.000
+
+2) ZONE PRIORITY (highest mean CO2 first)
+          mean_co2  mean_pred_co2  mean_scenario_co2  mean_saving_ppm  severe_hours  mean_reward
+zone_id                                                                                         
+Zone_003   588.629        569.754            569.754              0.0            55       24.159
+Zone_002   575.829        569.754            569.754              0.0            34       23.494
+Zone_005   572.955        569.754            569.754              0.0            39       27.170
+Zone_010   572.760        569.754            569.754              0.0            40       21.339
+Zone_008   571.416        569.754            569.754              0.0            40       24.535
+Zone_001   568.427        569.754            569.754              0.0            44       25.568
+Zone_004   568.419        569.754            569.754              0.0            34       32.319
+Zone_006   556.789        569.754            569.754              0.0            28       22.963
+Zone_007   555.956        569.754            569.754              0.0            33       23.729
+Zone_009   553.375        569.754            569.754              0.0            28       27.291
+
+3) STRONGEST LINEAR RELATIONSHIPS WITH CO2
+zone_Zone_003                0.0677
+weekday                      0.0606
+zone_Zone_009                0.0494
+zone_Zone_007                0.0416
+pm25_lag1                    0.0388
+zone_Zone_006                0.0376
+is_weekend                   0.0370
+month                        0.0370
+humidity_pct                 0.0329
+rl_ventilation_control_mw    0.0249
+
+4) RECOMMENDED ACTIONS
+   - Focus mitigation budget on the top-3 zones in the table above.
+   - Pre-activate green corridors before the peak hours seen in 03_hourly_pattern.png.
+   - On low-wind hours (emission_per_wind high), raise ventilation power early.
+   - Use the saved models to forecast next-hour CO2 and trigger alerts on 'Severe' risk.

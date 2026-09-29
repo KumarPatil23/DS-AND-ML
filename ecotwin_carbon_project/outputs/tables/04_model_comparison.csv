@@ -1,0 +1,16 @@
+target,model,test_MAE,test_RMSE,test_R2,cv_R2_mean,cv_R2_std
+co2_concentration_ppm,Baseline_Mean,88.1632,101.2384,-0.0023,-0.0014,0.0017
+co2_concentration_ppm,LinearRegression,91.1223,105.1283,-0.0808,-0.0444,0.017
+co2_concentration_ppm,Ridge,91.1042,105.1042,-0.0803,-0.0442,0.0171
+co2_concentration_ppm,RandomForest,91.1286,104.4522,-0.067,-0.0391,0.0177
+co2_concentration_ppm,GradientBoosting,93.0186,109.0805,-0.1636,-0.1631,0.0358
+pm25_ug_m3,Baseline_Mean,26.9747,31.196,-0.0111,-0.0077,0.0064
+pm25_ug_m3,LinearRegression,27.476,31.9913,-0.0633,-0.0612,0.0175
+pm25_ug_m3,Ridge,27.4756,31.9902,-0.0633,-0.0609,0.0175
+pm25_ug_m3,RandomForest,27.3799,31.8229,-0.0522,-0.033,0.0227
+pm25_ug_m3,GradientBoosting,27.5043,32.9352,-0.127,-0.1246,0.0404
+reward_value,Baseline_Mean,38.9747,44.2069,-0.0,-0.0027,0.0018
+reward_value,LinearRegression,39.6428,45.3227,-0.0511,-0.0376,0.0255
+reward_value,Ridge,39.6422,45.3209,-0.051,-0.0374,0.0254
+reward_value,RandomForest,39.3882,44.9075,-0.032,-0.0334,0.0224
+reward_value,GradientBoosting,39.4597,45.6226,-0.0651,-0.1296,0.0516

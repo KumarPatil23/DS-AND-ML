@@ -1,8 +1,0 @@
-EcoTwin Day 3 - Data Cleaning Summary
-Initial shape: 1500 rows x 16 columns
-Missing values before cleaning: 0
-Duplicate rows before cleaning: 0
-Final shape: 1500 rows x 16 columns
-Timestamp parsing: successful
-Outliers: flagged in outputs/reports/outlier_report.csv; not deleted automatically.
-Saved: C:\Users\Kamali\OneDrive\Documents\Desktop\EcoTwin_Urban_Carbon_Dispersal_Complete\data\processed\EcoTwin_clean.csv

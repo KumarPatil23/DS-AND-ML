@@ -1,5 +1,0 @@
-Day 5 EDA Part 2
-Highest mean-CO2 zone: Zone_003 (588.63 ppm)
-Highest mean-CO2 hour: 18:00 (589.06 ppm)
-Highest observed CO2: 749.89 ppm
-See reports/co2_by_zone.csv, co2_by_hour.csv, top10_high_carbon_periods.csv.
