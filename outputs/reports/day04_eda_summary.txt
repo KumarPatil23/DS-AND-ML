@@ -1,4 +1,0 @@
-Day 4 EDA Part 1
-Traffic vs CO2 Pearson correlation: 0.0009
-Wind speed vs CO2 Pearson correlation: -0.0088
-Figures saved in outputs/figures.

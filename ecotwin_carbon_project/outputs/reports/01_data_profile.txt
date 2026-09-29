@@ -1,0 +1,70 @@
+ECOTWIN URBAN CARBON DISPERSAL - DATA PROFILE
+============================================================
+Rows: 1500   Columns: 16
+
+COLUMN TYPES
+timestamp                            str
+zone_id                              str
+latitude                         float64
+longitude                        float64
+wind_speed_ms                    float64
+wind_direction_deg               float64
+temperature_c                    float64
+humidity_pct                     float64
+traffic_emission_rate_kg_h       float64
+industrial_emission_rate_kg_h    float64
+rl_traffic_signal_offset_s         int64
+rl_green_corridor_active           int64
+rl_ventilation_control_mw        float64
+co2_concentration_ppm            float64
+pm25_ug_m3                       float64
+reward_value                     float64
+
+MISSING VALUES PER COLUMN
+timestamp                        0
+zone_id                          0
+latitude                         0
+longitude                        0
+wind_speed_ms                    0
+wind_direction_deg               0
+temperature_c                    0
+humidity_pct                     0
+traffic_emission_rate_kg_h       0
+industrial_emission_rate_kg_h    0
+rl_traffic_signal_offset_s       0
+rl_green_corridor_active         0
+rl_ventilation_control_mw        0
+co2_concentration_ppm            0
+pm25_ug_m3                       0
+reward_value                     0
+
+DUPLICATE ROWS: 0
+
+UNIQUE ZONES: Zone_001, Zone_002, Zone_003, Zone_004, Zone_005, Zone_006, Zone_007, Zone_008, Zone_009, Zone_010
+
+TIME RANGE (raw strings): 01-01-2026 00:00 -> 31-01-2026 23:00
+
+SUMMARY STATISTICS (numeric)
+                                count     mean      std     min      25%      50%      75%      max
+latitude                       1500.0   37.775    0.043   37.70   37.738   37.775   37.811    37.85
+longitude                      1500.0 -122.426    0.043 -122.50 -122.463 -122.426 -122.388  -122.35
+wind_speed_ms                  1500.0    6.186    3.297    0.50    3.340    6.085    9.012    11.99
+wind_direction_deg             1500.0  178.968  104.323    0.10   87.575  176.550  272.675   359.80
+temperature_c                  1500.0   22.072    7.124   10.00   15.900   21.800   27.825    35.00
+humidity_pct                   1500.0   62.038   18.332   30.00   46.600   62.200   77.450    95.00
+traffic_emission_rate_kg_h     1500.0  279.511  129.324   50.96  170.015  278.745  393.708   499.85
+industrial_emission_rate_kg_h  1500.0  643.449  324.024  100.17  354.950  636.385  930.808  1198.73
+rl_traffic_signal_offset_s     1500.0   -0.100   17.533  -30.00  -15.000    0.000   15.000    30.00
+rl_green_corridor_active       1500.0    0.389    0.488    0.00    0.000    0.000    1.000     1.00
+rl_ventilation_control_mw      1500.0    2.509    1.410    0.00    1.330    2.510    3.670     4.99
+co2_concentration_ppm          1500.0  568.778  101.640  400.15  476.710  569.120  655.280   749.89
+pm25_ug_m3                     1500.0   64.565   31.630   10.00   37.192   63.945   91.718   119.93
+reward_value                   1500.0   25.175   44.058  -49.86  -13.150   25.770   64.840    99.92
+
+TARGET CANDIDATES
+  co2_concentration_ppm : main air-quality target (regression)
+  pm25_ug_m3            : secondary pollution target (regression)
+  reward_value          : RL controller performance score (regression)
+
+ACTION / CONTROL COLUMNS (decided by the RL agent)
+  rl_traffic_signal_offset_s, rl_green_corridor_active, rl_ventilation_control_mw

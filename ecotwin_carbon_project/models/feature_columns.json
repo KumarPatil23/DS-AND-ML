@@ -1,0 +1,51 @@
+{
+  "features": [
+    "wind_speed_ms",
+    "wind_direction_deg",
+    "temperature_c",
+    "humidity_pct",
+    "traffic_emission_rate_kg_h",
+    "industrial_emission_rate_kg_h",
+    "rl_traffic_signal_offset_s",
+    "rl_green_corridor_active",
+    "rl_ventilation_control_mw",
+    "hour",
+    "day",
+    "month",
+    "weekday",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "wind_dir_sin",
+    "wind_dir_cos",
+    "total_emission_kg_h",
+    "emission_per_wind",
+    "ventilation_index",
+    "heat_humidity_index",
+    "traffic_share",
+    "co2_lag1",
+    "pm25_lag1",
+    "co2_roll3",
+    "emission_roll3",
+    "zone_Zone_001",
+    "zone_Zone_002",
+    "zone_Zone_003",
+    "zone_Zone_004",
+    "zone_Zone_005",
+    "zone_Zone_006",
+    "zone_Zone_007",
+    "zone_Zone_008",
+    "zone_Zone_009",
+    "zone_Zone_010"
+  ],
+  "targets": [
+    "co2_concentration_ppm",
+    "pm25_ug_m3",
+    "reward_value"
+  ],
+  "best_models": {
+    "co2_concentration_ppm": "Baseline_Mean",
+    "pm25_ug_m3": "Baseline_Mean",
+    "reward_value": "Baseline_Mean"
+  }
+}
